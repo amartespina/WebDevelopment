@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
     <title>Register your superheroe</title>
 </head>
 
@@ -24,8 +25,81 @@
             <label for="bad">Bad: </label>
             <input type="radio" name="align" id="bad" value="bad">
 
+            <!--  living and deceased characters -->
+            <br>
+            <label for="isLiving">Alive: </label>
+            <input type="checkbox" name="living" id="isLiving">
 
+            <br>
+            <label for="">Appearances: </label>
+            <input type="number" placeholder="">
+            <br>
+            <!-- eye colour (a dropdown) -->
+            <label for="">Choose the eye color:</label>
+            <select name="" id="">
+                <option value="">blue</option>
+                <option value="">brown</option>
+                <option value="">green</option>
+                <option value="">purple</option>
+                <option value="">black</option>
+                <option value="">blue</option>
+                <option value="">white</option>
+                <option value="">red</option>
+            </select>
+            <br>
+            <!-- first appearance -->
+            <label for="appearance">First Appearance</label>
+            <input type="date" id="appearance" name="first appearance">
+            <br>
 
+            <!-- hair color -->
+            <label for="hair">Hair: </label>
+            <select name="hair" id="hair">
+                <option value="">black</option>
+                <option value="">white</option>
+                <option value="">brown</option>
+                <option value="">blond</option>
+                <option value="">red</option>
+                <option value="">gree</option>
+                <option value="">white</option>
+                <option value="">red</option>
+            </select>
+            <br>
+            <!-- id (identity: secret or public) -->
+            <label>Choose the identity: </label>
+            <label for="secret">Secret: </label>
+            <input type="radio" name="identity" id="secret" value="secret">
+
+            <label for="public">Public: </label>
+            <input type="radio" name="identity" id="public" value="public">
+            <br>
+            <!-- name -->
+            <label for="charName">Name of the character: </label>
+            <input type="text" id="charName" name="charcaterName">
+            <br>
+            <!-- page-id -->
+            <label for="">Page id: </label>
+            <input type="number" placeholder="" min="1">
+            <br>
+
+            <!-- sex -->
+            <label for="">Sex: </label>
+
+            <label for="m">Male</label>
+            <input type="radio" name="sex" id="m">
+
+            <label for="f">Female</label>
+            <input type="radio" name="sex" id="f">
+            <br>
+            <!-- urlslug -->
+            <label for="url">Enter the url: </label>
+            <span>\\/wiki\\//</span><input type="text" name="url" placeholder="Enter the URL here">
+            <br>
+            <!-- year -->
+            <label for="year">Year: </label>
+            <input type="number" min="1900" max="2099" id="year">
+            <br>
+            <button onsubmit="//call a function"> </button>
         </fieldset>
     </form>
 
