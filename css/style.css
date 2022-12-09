@@ -1,3 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    min-height:100vh;
+    width:100%;
+    padding: 0;
+    background-image:  linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("../img/Hp.jpeg");
+   
+    background-position: center;
+    background-size: cover;
+}
+
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1%, 4%;
+font-family: 'Playfair Display', serif;
+font-size: larger;
+background-color:  rgba(0,0,0,0.5);
+
+
+
+}
+
+nav .Logo {
+    height: 100px;
+    margin-left: 50%;
+   padding: 10%;
+}
+
+
+
+
+.navi > li, .navi> a{
+display: inline-block;
+}
+.navi li{
+    position: relative;
+
+} 
+.navi a{
+text-decoration: none;
+color:#fff;
+display: block;
+padding: 10px 3rem;
+
+
+transition: background-color .22 ease, color .22s ease;
+}
+.navi a:hover{
+   
+}
+.navL{
+color:#fff;
+
+margin-right: 2%;
+}
+
+.navL ul li a::after{
+    content:'';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width:0%;
+    background-color: white;
+}
+
+.navL ul li a:hover:after{
+
+    width:100%;
+    
+}
+
+.Submenu{
+    position:absolute;
+    background-color:  rgba(0,0,0,0.3);
+    width: 140px;
+    left: 0;
+    list-style: none;
+    display:none;
+}
+.navi li:hover> .Submenu{
+ display:flex;
+ min-width: max-content;
+ flex-direction: column;
+ align-content: center;
+
+}
 .container-big{
     padding: 30px ;
     width: 90%;
@@ -15,4 +109,6 @@
 .servicio-ind{
     width: 28%;
     text-align: center;
+
 }
+
